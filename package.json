@@ -6,27 +6,46 @@
     "server:start": "node ./backend/bin/www",
     "server:dev": "node --watch ./backend/bin/www",
     "db:reset": "node ./db/seed.js",
-    "client:build": "nuxt build",
-    "client:dev": "nuxt dev",
     "client:generate": "nuxt generate",
     "client:preview": "nuxt preview",
-    "client:postinstall": "nuxt prepare"
+    "client:postinstall": "nuxt prepare",
+    "client:dev": "webpack serve --mode development",
+    "client:build": "webpack --mode production",
+    "build": "webpack",
+    "start": "webpack serve --open"
   },
   "dependencies": {
+    "@emotion/react": "^11.13.3",
+    "@emotion/styled": "^11.13.0",
+    "@mui/material": "^6.1.6",
     "@nuxtjs/tailwindcss": "6.12.1",
+    "axios": "^1.7.7",
     "cookie-parser": "~1.4.4",
     "cors": "^2.8.5",
     "debug": "~2.6.9",
     "express": "^4.18.2",
     "express-basic-auth": "^1.2.1",
+    "html-webpack-plugin": "^5.6.3",
     "http-errors": "~1.6.3",
-    "nuxt": "^3.13.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-helmet": "^6.1.0",
     "sqlite3": "^5.1.7",
-    "vue": "latest",
+    "styled-components": "^6.1.13",
     "vue-router": "latest"
   },
   "devDependencies": {
+    "@babel/core": "^7.26.0",
+    "@babel/preset-env": "^7.26.0",
+    "@babel/preset-react": "^7.25.9",
     "@faker-js/faker": "^8.4.1",
-    "fs": "^0.0.1-security"
+    "@types/react": "^18.3.12",
+    "babel-loader": "^9.2.1",
+    "css-loader": "^7.1.2",
+    "fs": "^0.0.1-security",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.96.1",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.1.0"
   }
 }
