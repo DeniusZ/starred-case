@@ -1,6 +1,5 @@
-// App.js
 import React from "react";
-import { Helmet } from "react-helmet"; // Helmet can manage your <head> tags
+import { Helmet } from "react-helmet";
 import Home from "./pages/Home";
 
 function App() {
@@ -17,7 +16,7 @@ function App() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Page Title</title>
       </Helmet>
-      <div className="w-100 sm:w-6/12 sm:mx-auto pt-8">
+      <div>
         <Home />
       </div>
     </div>
