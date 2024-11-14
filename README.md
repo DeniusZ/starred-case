@@ -58,10 +58,10 @@ We tested this project with node version 20 and `npm` as the package manager, bu
 
 #### Starting the project
 
-2. Run `npm install`
-3. Run `npm run db:reset` to reset & reseed the local SQLite database
-4. Run `npm run server:start` `npm run server:dev` to start an expressjs server on localhost:3001
-5. In a separate terminal window, run the Nuxt dev environment with `npm run client:dev`
+1. Run `npm install`
+2. Run `npm run db:reset` to reset & reseed the local SQLite database
+3. Run `npm run server:start` to start an expressjs server on localhost:3001
+4. In a separate terminal window, run the frontend with `npm run start`
 
 ## Architecture diagram task
 
